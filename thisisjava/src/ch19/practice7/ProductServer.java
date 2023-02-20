@@ -19,10 +19,6 @@ public class ProductServer {
 	public static void main(String[] args) {
 		ProductServer productServer = new ProductServer();
 		
-		System.out.println("----------------------------------------");
-		System.out.println("서버를 종료하려면 q를 입력하고 Enter 키를 입력하세요.");
-		System.out.println("----------------------------------------");
-		
 		productServer.startServer();
 		
 		productServer.serverUI();
@@ -56,6 +52,10 @@ public class ProductServer {
 	}
 	
 	private void serverUI() {
+		System.out.println("----------------------------------------");
+		System.out.println("서버를 종료하려면 q를 입력하고 Enter 키를 입력하세요.");
+		System.out.println("----------------------------------------");
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		while (true) {
